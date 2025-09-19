@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manthan Pande| ML Software Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manthan Pande | ML Software Developer</title>
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="floating-elements">
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
+  <!-- Floating background elements -->
+  <div class="floating-elements">
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+  </div>
+
+  <!-- Main content -->
+  <div class="container fade-in">
+    <div class="card">
+      <div class="profile-section">
+        <!-- Avatar with initials -->
+        <div class="avatar">MP</div>
+        <h1 class="name">👋 Hello, I'm <span>Manthan Pande</span></h1>
+        <p class="title">Software Developer & ML Engineer</p>
+      </div>
+
+      <!-- About section -->
+      <div class="description">
+        I’m a passionate developer working at the
+        <span class="highlight">intersection of machine learning models and software deployment</span>.
+        I specialize in bringing <span class="highlight">AI from research to production</span>, building
+        <span class="highlight">scalable ML systems</span> and <span class="highlight">robust software pipelines</span>.
+      </div>
+
+      <!-- Skills section -->
+      <div class="skills">
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Model Deployment</span>
+        <span class="skill-tag">MLOps</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">API Development</span>
+        <span class="skill-tag">Cloud Computing</span>
+        <span class="skill-tag">DevOps</span>
+      </div>
+
+      <!-- Call-to-action -->
+      <div class="cta-section">
+        <a href="#contact" class="cta-button">🚀 Let's Build Something Amazing</a>
+      </div>
+
+      <!-- Social links -->
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:manthan@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
+  </div>
 
-    <div class="container loading">
-        <div class="card">
-            <div class="profile-section">
-                <div class="avatar">A</div>
-                <h1 class="name">Hello, I'm Manthan Pande</h1>
-                <p class="title">Software Developer & ML Engineer</p>
-            </div>
-
-            <div class="description">
-                I'm a passionate software developer who loves working at the
-                <span class="highlight">intersection of machine learning models and software deployment</span>.
-                I specialize in building scalable solutions that bring AI models from research to production,
-                creating seamless bridges between <span class="highlight">cutting-edge ML algorithms</span> and
-                <span class="highlight">robust software systems</span>.
-            </div>
-
-            <div class="skills">
-                <span class="skill-tag">Machine Learning</span>
-                <span class="skill-tag">Model Deployment</span>
-                <span class="skill-tag">MLOps</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">API Development</span>
-                <span class="skill-tag">Cloud Computing</span>
-                <span class="skill-tag">DevOps</span>
-            </div>
-
-            <div class="cta-section">
-                <a href="#contact" class="cta-button">Let's Build Something Amazing</a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Add smooth loading animation and hover effects
-        document.addEventListener('DOMContentLoaded', function () {
-            const container = document.querySelector('.container');
-            container.classList.add('loading');
-
-            const skillTags = document.querySelectorAll('.skill-tag');
-            skillTags.forEach(tag => {
-                tag.addEventListener('mouseenter', function () {
-                    this.style.transform = 'translateY(-2px) scale(1.05)';
-                });
-
-                tag.addEventListener('mouseleave', function () {
-                    this.style.transform = 'translateY(0) scale(1)';
-                });
-            });
+  <script>
+    // Hover animation for skill tags
+    document.addEventListener("DOMContentLoaded", () => {
+      const skillTags = document.querySelectorAll(".skill-tag");
+      skillTags.forEach(tag => {
+        tag.addEventListener("mouseenter", () => {
+          tag.style.transform = "translateY(-4px) scale(1.08)";
+          tag.style.boxShadow = "0 6px 12px rgba(0,0,0,0.15)";
         });
-    </script>
+        tag.addEventListener("mouseleave", () => {
+          tag.style.transform = "translateY(0) scale(1)";
+          tag.style.boxShadow = "none";
+        });
+      });
+    });
+  </script>
 </body>
 </html>
